@@ -1,0 +1,31 @@
+CreateWallet A 5.6
+CreateWallet B 4.8
+CreateWallet C 10.20
+CreateWallet D 5.40
+CreateWallet E 9.0
+Overview
+TransferMoney A D 0.1
+TransferMoney C A 5
+TransferMoney E C 3
+Overview
+TransferMoney A C 6.15
+Statement A
+Overview
+Offer2
+Overview
+
+CreateWallet Harry 100
+CreateWallet Ron 95.7
+CreateWallet Hermione 104
+CreateWallet Albus 200
+CreateWallet Draco 500
+Overview
+FixedDeposit Harry 10
+TransferMoney Harry Draco 10
+TransferMoney Harry Draco 10
+TransferMoney Harry Draco 10
+TransferMoney Harry Draco 10
+TransferMoney Harry Draco 10
+TransferMoney Harry Draco 10
+Statement Harry
+Overview
