@@ -1,0 +1,63 @@
+Hi Shashank, below is one of the recent interview exp for #flipkart machine counding  round by @Sarabjeet Singh .
+
+Machine Coding round:
+
+Implement a sales management system that allows one to track the sales at various levels in an organization.
+
+Here, we have a company that sells snacks - food items and beverages at retail outlets. These outlets are all over India.
+
+We want to have a system that tracks sales details at following levels
+Store
+City
+State
+All India
+
+As an example, stores sell following items
+Food items
+Sandwich
+Poha
+Burger
+Beverages
+Tea
+Coffee
+Bottled water
+
+This system mainly tracks following:
+Stock left at a particular store
+Number of units sold at a given store
+
+The system should also -
+Handle addition of inventory for various items in stores
+Handle addition of new items and stores
+
+Please do not focus on persistence layer i.e. data store. Use in-memory store for now. Use file system if you prefer that. Do not use any database or NoSQL store.
+
+It is absolutely OK to hardcode initial inventories
+
+Please make sure that you have a working code at the end of the session.
+
+Questions that the system needs to answer are as given below. Please add test cases for those.
+How much are the daily sales at a particular store, in a city, state and all over
+What are the monthly sales for Coffee at store, in city, state and all over
+How much is the stock left at a particular store at any given point in time
+Which state is highest in beverage consumption in monthly category
+Which cities currently have a shortage of snacks
+
+Expectations:
+Make sure that you can execute your code and show that it is in working state
+Make sure that code functionally correct
+Work on the expected output first and then add good-to-have features of your own
+Edge cases are covered
+Exceptions are raised and handled appropriately
+Code is readable
+Separation of concern is addressed
+Code can easily accommodate changing requirements with minimal changes
+Clear separation of Interface and Implementation
+Code should be easily testable
+Proper naming conventions are followed
+It will be a plus if the system is generic enough to handle things apart from snacks items
+
+Show less
+2:46 PM
+
+Make sure you complete all the mandatory requirements, I got rejected because I wasn't able to complete everything in time
