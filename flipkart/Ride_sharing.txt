@@ -1,0 +1,79 @@
+MC:SDE2: Ride Sharing Application
+
+Updated automatically every 5 minutes
+Ride Sharing Application
+Description:
+Implement a ride sharing application. Below are the expected features from the system.
+
+Features:
+* The application allows users to share rides on a route.
+* Users can either offer a shared ride (Driver) or consume a shared ride (Passenger).
+* Users can search and select one from multiple available rides on a route with same source and destination.
+
+Requirements:
+* Application should allow user onboarding.
+* add_user(user_detail)
+* Add basic user details
+* Add user’s vehicle(s) details
+* User should be able to offer a shared ride on a route with details.
+* offer_ride(ride_detail)
+* Ride will have details like vehicle, origin, destination, start time, ride time, available seats. (A ride will have no intermediate stops.)
+* Users can select a ride from multiple offered rides using a selection strategy. (A user can only select  a ride for himself (only for 1 person))
+* select_ride(source, destination, selection_strategy)
+* One with fastest ride i.e. shortest ride time.
+* One which reaches earliest i.e. earliest end time.
+* Find total fuel saved by any passenger. (Only a passenger will save X units of fuels for a shared ride time of X hours.)
+* Find total rides offered/taken by a user.
+
+Other Notes:
+* Write a driver class for demo purpose. Which will execute all the commands at one place in the code and have test cases.
+* Do not use any database or NoSQL store, use in-memory data-structure for now.
+* Do not create any UI for the application.
+* Please prioritize code compilation, execution and completion.
+* Work on the expected output first and then add bonus features of your own.
+* 
+Expectations:
+* Make sure that you have a working and demo-able code.
+* Make sure that code is functionally correct.
+* Use of proper abstraction, entity modelling, separation of concerns is required.
+* Code should be modular, readable and unit-testable.
+* Code should easily accommodate new requirements with minimal changes.
+* Proper exception handling is required.
+* Concurrency Handling (BONUS)
+
+Sample Test Cases:
+* Onboard 5 users
+* 
+* add_user(“Rohan, M, 36”); add_vehicle(“Rohan, Swift, KA-01-12345)
+* add_user(“Shashank, M, 29”); add_vehicle(“Shashank, Baleno, TS-05-62395)
+* add_user(“Nandini, F, 29)
+* add_user(“Shipra, F, 27”) ; add_vehicle(“Shipra”, Polo, KA-05-41491); add_vehicle(“Shipra, Scooty KA-12-12332”)
+* add_user(“Gaurav, M, 29) ;
+
+* Offer 4 rides by 3 users
+* offer_ride(“Rohan, Origin=Hyderabad, Available Seats=1, Vehicle=Swift, KA-01-12345, Destination= Bangalore, Start Time=25th Jan, 2019 08:00, ride_duration=13 hrs”)
+* offer_ride(“Shipra, Origin=Bangalore, Available Seats=1, Vehicle=Scooty KA-12-12332, Destination=Mysore,Start Time= 29th Jan, 2019 18:00, ride_duration=10 hrs”)
+* offer_ride(“Shipra, Origin=Bangalore, Available Seats=2, Vehicle=Polo, KA-05-41491, Destination=Mysore, Start Time=30th Jan, 2019 18:00, ride_duration=4 hrs”)
+* offer_ride(“Shashank, Origin=Hyderabad, Available Seats=2, Vehicle=Baleno, TS-05-62395, Destination=Bangalore, Start Time=27th Jan, 2019 10:00, ride_duration=14 hrs”)
+
+* Find rides for 4 users
+* select_ride(“Nandini, Origin=Bangalore, Destination=Mysore, Fastest Ride”)
+* 2(c) is the desired output.
+
+* select_ride(“Gaurav, Origin=Bangalore, Destination=Mysore, Earliest ride”)
+* 2(b) is the desired output
+
+* select_ride(“Shashank, Origin=Mumbai, Destination=Bangalore, Fastest ride”)
+* No rides found        
+
+* select_ride(“Rohan, Origin=Hyderabad, Destination=Bangalore, Fastest ride”)
+* 2(d) is the desired output
+
+* Find fuel saved
+* fuel_saved_by_passenger 
+* Nandini : 4 units, Gaurav : 10 units, Shashank:0, Rohan : 14
+
+* Find total rides by user:
+* Nandini : 1 Taken, 0 Offered  b. Rohan 1 Taken, 1 Offered. c. Shashank: 0 Taken, 1 Offered, d. Gaurav 1 Taken, 0 Offered
+
+Published by Google Drive–Report Abuse
