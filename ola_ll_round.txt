@@ -1,0 +1,92 @@
+URl shortner
+1. 6 characters long (10 + 26 +26) = 62 ^ 6 = 56 billion = 
+2. million users(1000 write /minute) = 1000 / 60 = 16 QPS
+3. 2 million read / minute = 2 * 10^6 / 60 = 30K QPS
+4. expire time (TTL)
+
+
+user+long_url = 
+unique_id_generator = 1 to 56 billion
+
+short_url = random_url()
+check in db with short_url
+mp[]
+
+
+1. NoSQL database
+2. SQl
+Schema of tables
+
+URL:
+  id
+  user_id
+    
+  short_url
+  long_url
+  
+  created_at
+  expiry_time
+  status
+
+
+  
+
+
+Account:
+  id
+  name
+  password
+  
+// user --- * URL
+// user -- Account
+// user --*Role
+Role:
+  string name
+  string Description
+  long user_id
+
+User:
+  Account
+  Gender Enum
+  string picture
+  List<Role> roles;  
+  
+  int noOfClicks;
+  @OneToMany
+  List<URL> url
+  
+
+
+
+
+countary, browser, click, operating
+  
+  
+CLick_table
+userId  | clicks | urlid 
+
+browser
+userId | URlId | browser
+
+
+
+
+
+
+
+
+
+CAP
+CDN
+
+Cache
+  LRU
+  
+  
+Sharding: 
+  URLshort
+  
+  
+
+  
+  
