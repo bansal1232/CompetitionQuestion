@@ -1,0 +1,30 @@
+Given Sequential Array from -n to n and target number
+
+Initially you are at element 0 of array. You have to find the minimum number of steps you will take to reach target number.
+
+You can only jump left or right in array but with every move your jump count increases by one
+
+Example :
+Step 1: 1 jump to right or 1 jump to left
+Step 2: 2 jumps to the right or 2 jumps to the left of where you are at right now.
+Step 3: 3 jumps to the right or 3 jumps to the left of where you are at right now and so on.
+.
+.
+.
+.
+Step n: n jumps to the right or n jumps to the left of where you are at right now and so on.
+
+Example :
+arr = [-3,-2,-1,0,1,2,3] , target = -2
+
+output : 3
+
+Explaination:
+
+step 1 : 0-> -1 ( jump count = 1 )
+step 2 : -1 -> 1 ( jumps count = 2 )
+step 3 : 1 -> -2 ( jumps count = 3 )
+
+we reach target element minimum 3 steps
+
+link: https://leetcode.com/discuss/interview-experience/1364522/Amazon-or-SDE-2-or-Problem-Solving
