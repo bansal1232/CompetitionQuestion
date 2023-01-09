@@ -141,7 +141,8 @@ hr, 1
 operations, 0
 
 
-select Departmaent.dname, count(Departmaent.dname) from Departmaent join ON from Employee group by did
+Solution: select Department.dname, count(Employee.eid) from  Department left  join Employee on Department.did = Employee.did group by Department.did ;
+
 
 
 
