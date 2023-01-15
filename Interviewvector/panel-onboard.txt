@@ -1,0 +1,7 @@
+1. Project discussion
+2. Find difference in number of days, date1="2019-12-05", date2="2025-01-05"
+3. Find difference in next greater elements given in an array 
+   Input: arr=[23, 12, 43, 66]
+   Output:    [2,1,1,0]
+4. ACID properties
+5. POST, PUT, PATCH difference
