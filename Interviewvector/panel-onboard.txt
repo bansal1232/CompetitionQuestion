@@ -5,3 +5,4 @@
    Output:    [2,1,1,0]
 4. ACID properties
 5. POST, PUT, PATCH difference
+6. HTTP vs HTTPs
