@@ -1,0 +1,74 @@
+1. Design a #twitterHashTag functionality. Handle load around 10 millions tweets / day
+   Then need to show top 10 tweets from that.
+2. Extend this design to show tweets Country specific
+
+
+#election -> 1
+#cricketMatch -> 5
+#chatgpt -> 10
+#moviename1 -> 10
+#moviename2 -> 11
+
+
+10 million tweets / day
+1 Billion -> 10^9
+10^7 / day
+
+QPS: 1200 tweets / sec
+QPR: 72000 tweets / min -> 50 are unique
+
+
+00:00 -> 12  -> [hash1, hash2, hash1, hash3]
+00:01 -> 8
+00:02 -> 10
+..
+..
+..
+00:15 -> 15
+00:16 -> 13
+
+Map<TimeStamp, List<TweetId>>
+
+Map<TimeStamp, hashMap<TweetName, count>>
+
+Map<tweetName, TweetCout> tweetCountMap;
+
+
+<tweetName_CountryCode, TweetCout>
+
+<T1_IN, 45>
+<T1_USA, 96>
+<T3_IN, 55> 
+GET <*_IN> -> [45, 55]
+
+Slot based sharding
+Hash(key) -> [0 to 4]
+
+
+9, 8, 9, 10
+
+
+[
+   10 -> [TW1, TW2], expiryTime
+   9 -> [TW5, TW7]
+   8 -> []
+]
+
+
+
+2:00 Pm to 2:15 PM
+2:01 PM to 2:00  PM
+
+200, 201, ... 215, 216
+
+216 - 215
+
+cronJob at every X second: 
+
+
+Top 10 trending topics
+min count
+
+database: keyValue store database
+
+redis as key-value store

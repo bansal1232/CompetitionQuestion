@@ -1,0 +1,22 @@
+station,timeStamp, location2 
+put(s1, 2, B)
+put(s2, 2, C)
+put(s2, 3, T)
+put(s1, 4, P)
+
+GET(s2, 4) -> 3
+GET(s2, 3) -> 3
+GET(s1, 5) -> 4
+
+
+get time <= X value
+
+Composition vs inheritence
+Kafka -> topics, partition,
+checked vs unchecked expection
+How scale MySQL database, what challenges wud be there in this ?
+
+
+
+
+
