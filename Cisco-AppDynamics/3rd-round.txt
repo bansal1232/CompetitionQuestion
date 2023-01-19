@@ -1,0 +1,13 @@
+Design fitness App (HLD)
+Features
+    Time wise trend
+    How much calorie burned, 
+    Oxygen level, (Alert)
+    Total travel steps (Alert)
+    Measuring heart rate (Alert)
+Anomaly
+    If heart rate increase by X %, trigger alert
+
+Time series database
+Total calls -> depends on devices -> 1 million devices = 10 ^ 6
+10 % -> Active devices -> 10^5 devices are active
